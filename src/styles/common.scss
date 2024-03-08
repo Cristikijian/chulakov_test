@@ -1,14 +1,15 @@
-// @font-face {
-//   font-family: "Standard CT Stencil";
-//   src: 
-//     url("fonts/standardctstencil_bold-webfont.woff2") format("woff2"),
-//     url("fonts/standardctstencil_bold-webfont.woff") format("woff"),
-//     url("fonts/StandardCTStencil Bold.svg") format("svg");
-//   font-weight: normal;
-// }
+@font-face {
+  font-family: "Standard CT Stencil";
+  src: 
+    url("fonts/standardctstencil_bold-webfont.woff2") format("woff2"),
+    url("fonts/standardctstencil_bold-webfont.woff") format("woff"),
+    url("fonts/StandardCTStencil Bold.svg") format("svg");
+  font-weight: normal;
+}
 
 body {
   background-color: #1F2229;
+  font-family: Roboto, sans-serif;
 }
 
 main {
@@ -18,10 +19,15 @@ main {
 }
 
 .main-text {
-  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
+}
+
+.secondary-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .title {
@@ -61,9 +67,27 @@ main {
 }
 
 .benefit {
+  button {
+    margin-top: 40px;
+  }
+}
+
+.benefit__text {
   padding: 24px 16px;
 }
 
 .benefit__image {
-  margin-top: 48px;
+  margin: 48px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.gifts {
+  padding: 24px 16px;
+
+  .subtitle {
+    margin-bottom: 16px;
+  }
 }

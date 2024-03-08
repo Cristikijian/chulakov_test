@@ -1,24 +1,19 @@
 header {
   display: flex;
   flex-direction: row;
+  padding: 10px 16px 10px 14px;
   justify-content: space-between;
   height: 45px;
-  border-bottom: 1px #545b6d;
+  border-bottom: 1px solid #424855;
 }
 
-.logo {
-  margin-left: 16px;
-}
-
-.location {
-  margin-right: 14px;
-}
 
 .location__image {
+  display: inline-block;
   vertical-align: middle;
 }
 
 .location__city {
-  display: inline;
+  display: inline-block;
   color: #fff;
 }

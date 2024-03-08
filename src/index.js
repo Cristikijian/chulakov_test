@@ -1,3 +1,1 @@
-import './styles/main.sass';
-
-console.log('jopik');
+import "./styles/main.sass";

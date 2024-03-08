@@ -33,30 +33,30 @@
 
   <body>
     <header>
-      <div>
+      <div class="logo">
         <img alt="logo" src="images/logo.svg" />
       </div>
-      <div>
-        <img alt="map-pin" src="" />
-        <div>Санкт-Петербург</div>
+      <div class="location">
+        <img class="location__image" alt="map-pin" src="images/Location.svg" />
+        <div class="location__city">Санкт-Петербург</div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="benefit">
         <div>
           <p class="secondary-text">Акция продлится с 1 по 20 сентября</p>
-          <h1>это ваша <span>выгода!</span></h1>
+          <h1 class="title">это ваша<br><span>выгода!</span></h1>
           <p class="main-text">
             Тариф «Мой онлайн+» и 1 ТБ трафика в подарок для новых абонентов
           </p>
-          <button>Принять участие</button>
+          <button class="button">Принять участие</button>
         </div>
-        <div>
+        <div class="benefit__image">
           <img alt="Выгода 1 терабайт" src="images/Boss.png" />
         </div>
       </section>
       <section>
-        <h2>Один терабайт — много любимых развлечений</h2>
+        <h2 class="subtitle">Один терабайт — много любимых развлечений</h2>
         <p class="main-text">
           Подарок получают только новые абоненты при подключении услуг Tele2 с
           тарифом «Мой онлайн+». Трафик расходуется в течение года.
@@ -86,7 +86,7 @@
         </div>
       </section>
       <section>
-        <h2>Оставьте номер и <span>1 ТБ — ваш</span></h2>
+        <h2 class="subtitle">Оставьте номер и <span>1 ТБ — ваш</span></h2>
         <div>
           <div>1</div>
           <p class="main-text">
@@ -109,21 +109,21 @@
         </div>
         <form autocomplete="on" name="phone">
           <label for="tel">Номер телефона</label>
-          <input type="tel" autofocus placeholder="+7 (988) 543-32-34" />
+          <input type="tel" placeholder="+7 (988) 543-32-34" />
           <input type="checkbox" name="agreement" />Даю согласие на обработку
           персональных данных. Условия соглашения.
-          <input type="submit" value="Выслать промокод" />
+          <input class="button" type="submit" value="Выслать промокод" />
         </form>
       </section>
       <section>
-        <h2>Заходите на сайт Tele2</h2>
+        <h2 class="subtitle">Заходите на сайт Tele2</h2>
         <p class="main-text">
           Перейдите в магазин на страничку активации, введите ваш промокод.
           Готово! Теперь вы получите 1 ТБ на ваш телефон при подключении тарифа
           «Мой онлайн+».
         </p>
         <img alt="Заходите на сайт Tele2" src="images/phone.png" />
-        <button>Оформить тариф</button>
+        <button class="button">Оформить тариф</button>
       </section>
       <section>
         <div>
@@ -139,6 +139,27 @@
         </div>
       </section>
     </main>
+    <div class="change-region">
+      <p>Ваш регион Санкт-Петербург?</p>
+      <div>
+        <button>Да, верно</button>
+        <button>Изменить регион</button>
+      </div>
+    </div>
+    <div class="choose_city">
+      <h2>Выберите город</h2>
+      <a>Воронеж</a>
+      <a>Иркутск</a>
+      <a>Кемерово</a>
+      <a>Красноярск</a>
+      <a>Москва</a>
+      <a>Н. Новгород</a>
+      <a>Новосибирск</a>
+      <a>Пермь</a>
+      <a>Санкт Петербург</a>
+      <a>Челябинск</a>
+      <a>Ростов-на-Дону</a>
+    </div>
     <footer>
       <img alt="Tele2" src="images/logo.svg" />
       <div>© Tele2 Россия, 2024</div>

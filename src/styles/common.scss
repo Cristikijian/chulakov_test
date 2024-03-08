@@ -1,0 +1,50 @@
+body {
+  background-color: #1F2229;
+}
+main {
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFF;
+}
+.main-text {
+  font-family: Tele2 TextSans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.title {
+  font-family: Standard CT Stencil;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  span {
+    color: #48CCFD;
+  }
+}
+.subtitle {
+  font-family: Tele2 DisplaySerif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  span {
+    color: #48CCFD;
+  }
+}
+.button {
+  padding: 11px 40px;
+  background-color: #FFF;
+  border-radius: 48px;
+  color: #1F2229;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  border: none;
+}
+.benefit {
+  padding: 24px 16px;
+}
+
+.benefit__image {
+  margin-top: 48px;
+}

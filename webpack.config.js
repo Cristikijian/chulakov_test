@@ -26,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sass|css)$/,
+        test: /\.(scss|sass|css)$/,
         use: [
           env !== 'production'
             ? 'style-loader'

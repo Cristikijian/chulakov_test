@@ -112,11 +112,13 @@
           </p>
         </div>
         <form class="get-promocode__form" autocomplete="on" name="phone">
-          <label for="tel">Номер телефона</label>
+          <label class="get-promocode__form-phone" for="tel">Номер телефона</label>
           <input type="tel" placeholder="+7 (988) 543-32-34" />
-          <input type="checkbox" name="agreement" />Даю согласие на обработку
-          персональных данных. Условия соглашения.
-          <input class="button" type="submit" value="Выслать промокод" />
+          <label class="get-promocode__form-checkbox">
+            <input type="checkbox" name="agreement" value="agree" />Даю согласие на обработку
+            персональных данных. <a>Условия соглашения</a>.
+          </label>         
+          <input class="button get-promocode__button" type="submit" value="Выслать промокод" />
         </form>
       </section>
       <section class="registr-a-tariff">

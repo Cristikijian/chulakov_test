@@ -95,7 +95,29 @@
   }
 
   &__form {
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
+  }
+
+  &__form-phone {
+    margin-bottom: 3px;
+    color: #8F9399;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__form-checkbox {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &__button {
+    margin: 0 auto;
   }
 }
 

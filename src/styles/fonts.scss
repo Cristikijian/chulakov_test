@@ -1,8 +1,11 @@
 @font-face {
-    font-family: "Standard CT Stencil";
-    src: 
-      url("../../public/fonts/standardctstencil_bold-webfont.woff2") format("woff2"),
-      url("../../public/fonts/standardctstencil_bold-webfont.woff") format("woff"),
-      url("../../public/fonts/StandardCTStencil_Bold.svg") format("svg");
+    font-family: "Russo One Regular";
+    src: url("../../public/fonts/RussoOne-Regular.ttf");
     font-weight: normal;
-  }
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../../public/fonts/RobotoSlab-Regular.ttf");
+    font-weight: normal;
+}

@@ -65,53 +65,53 @@
           тарифом «Мой онлайн+». Трафик расходуется в течение года.
         </p>
         <div class="gifts__items">
-          <div>
-            <div>
+          <div class="gifts__item">
+            <div class="gifts__image">
               <img
                 inline
                 alt="Около 500 часов видео"
                 src="public/images/500hours_video.svg"
               />
             </div>
-            <p class="main-text">Около 500 часов видео</p>
+            <p class="main-text gifts__item-info">Около 500 часов видео</p>
           </div>
-          <div>
-            <div>
+          <div class="gifts__item">
+            <div class="gifts__image">
               <img inline alt="Примерно 200 000 песен" src="public/images/200songs.svg" />
             </div>
-            <p class="main-text">Примерно 200 000 песен</p>
+            <p class="main-text gifts__item-info">Примерно 200 000 песен</p>
           </div>
-          <div>
-            <div>
+          <div class="gifts__item">
+            <div class="gifts__image">
               <img inline alt="Порядка 300 000 фото" src="public/images/300photo.svg" />
             </div>
-            <p class="main-text">Порядка 300 000 фото</p>
+            <p class="main-text gifts__item-info">Порядка 300 000 фото</p>
           </div>
         </div>
       </section>
-      <section>
+      <section class="get-promocode">
         <h2 class="subtitle">Оставьте номер и <span>1 ТБ — ваш</span></h2>
-        <div>
-          <div>1</div>
-          <p class="main-text">
+        <div class="get-promocode__step">
+          <div class="get-promocode__step-number">1</div>
+          <p class="main-text get-promocode__step-info">
             Ведите свой номер телефона, затем дождитесь смс с промокодом для
             получения Тб
           </p>
         </div>
-        <div>
-          <div>2</div>
-          <p class="main-text">
-            Перейдите на сайт Tele2 и активируйте промокод при подключении на
+        <div class="get-promocode__step">
+          <div class="get-promocode__step-number">2</div>
+          <p class="main-text get-promocode__step-info">
+            Перейдите на <a href="https://rostov.tele2.ru">сайт Tele2</a> и активируйте промокод при подключении на
             тариф «Мой Онлайн+»
           </p>
         </div>
-        <div>
-          <div>3</div>
-          <p class="main-text">
+        <div class="get-promocode__step">
+          <div class="get-promocode__step-number">3</div>
+          <p class="main-text get-promocode__ste-info">
             Используйте свой подарочный ТБ от Tele2 в течение всего года
           </p>
         </div>
-        <form autocomplete="on" name="phone">
+        <form class="get-promocode__form" autocomplete="on" name="phone">
           <label for="tel">Номер телефона</label>
           <input type="tel" placeholder="+7 (988) 543-32-34" />
           <input type="checkbox" name="agreement" />Даю согласие на обработку
@@ -119,27 +119,27 @@
           <input class="button" type="submit" value="Выслать промокод" />
         </form>
       </section>
-      <section>
+      <section class="registr-a-tariff">
         <h2 class="subtitle">Заходите на сайт Tele2</h2>
         <p class="main-text">
           Перейдите в магазин на страничку активации, введите ваш промокод.
           Готово! Теперь вы получите 1 ТБ на ваш телефон при подключении тарифа
           «Мой онлайн+».
         </p>
-        <img alt="Заходите на сайт Tele2" src="images/phone.png" />
-        <button class="button">Оформить тариф</button>
-      </section>
-      <section>
-        <div>
-          <!-- TODO: svg -->
-          <div><img alt="facebook" src="" /></div>
-          <div><img alt="twitter" src="" /></div>
-          <div><img alt="vk" src="" /></div>
+        <div class="registr-a-tariff__image">
+          <img alt="Заходите на сайт Tele2" src="images/phone.png" />
         </div>
-        <div>
+        <button class="button registr-a-tariff__button">Оформить тариф</button>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__social-networks">
+          <div class="subscribe__social-networks-item"><img  inline alt="facebook" src="public/images/facebook.svg" /></div>
+          <div class="subscribe__social-networks-item"><img inline alt="twitter" src="public/images/twitter.svg" /></div>
+          <div class="subscribe__social-networks-item"><img inline alt="vk" src="public/images/vk.svg" /></div>
+        </div>
+        <div class="subscribe__promo-info">
           <p>Полные условия акции</p>
-          <!-- TODO: svg -->
-          <img alt="Полные условия акции" src="" />
+          <div class="subscribe__rating-by-age">16+</div>
         </div>
       </section>
     </main>
@@ -150,7 +150,7 @@
         <button>Изменить регион</button>
       </div>
     </div>
-    <div class="choose_city">
+    <div class="choose-city">
       <h2>Выберите город</h2>
       <a>Воронеж</a>
       <a>Иркутск</a>
@@ -164,9 +164,9 @@
       <a>Челябинск</a>
       <a>Ростов-на-Дону</a>
     </div>
-    <footer>
-      <img alt="Tele2" inline src="public/images/logo.svg" />
-      <div>© Tele2 Россия, 2024</div>
+    <footer class="footer">
+      <div class="footer__logo"><img alt="Tele2" inline src="public/images/logo.svg" /></div>
+      <div class="footer__copywrite">© Tele2 Россия, 2024</div>
     </footer>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@import "variables";
+
 body {
   background-color: #1F2229;
   font-family: Roboto, sans-serif;
@@ -30,7 +32,7 @@ main {
   line-height: 36px;
 
   span {
-    color: #48CCFD;
+    color: $color-light-blue;
   }
 }
 
@@ -41,7 +43,7 @@ main {
   line-height: 34px;
 
   span {
-    color: #48CCFD;
+    color: $color-light-blue;
   }
 }
 
@@ -55,30 +57,4 @@ main {
   line-height: 22px;
   text-align: center;
   border: none;
-}
-
-.benefit {
-  button {
-    margin-top: 40px;
-  }
-}
-
-.benefit__text {
-  padding: 24px 16px;
-}
-
-.benefit__image {
-  margin: 48px 0;
-
-  img {
-    width: 100%;
-  }
-}
-
-.gifts {
-  padding: 24px 16px;
-
-  .subtitle {
-    margin-bottom: 16px;
-  }
 }

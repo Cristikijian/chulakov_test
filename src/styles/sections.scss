@@ -1,0 +1,173 @@
+@import "variables";
+
+.benefit {
+  button {
+    margin-top: 40px;
+  }
+
+  &__text {
+    padding: 24px 16px;
+  
+    .title {
+      text-transform: uppercase;
+    }
+  }
+  
+  &__image {
+    margin: 48px 0;
+  
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gifts {
+  padding: 24px 16px;
+
+  .subtitle {
+    margin-bottom: 16px;
+  }
+  
+  &__items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__item-info {
+    margin-left: 16px;
+  }
+  
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #39404C;
+  }
+}
+
+.get-promocode {
+  padding: 0 16px;
+  margin-bottom: 72px;
+
+  a {
+    text-decoration: underline;
+  }
+
+  .subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #39404C;
+    font-family: "Tele2 DisplaySerif";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: $color-light-blue;
+    margin-bottom: 16px;
+  }
+
+  &__step-info {
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    margin-top: 40px;
+  }
+}
+
+.registr-a-tariff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  margin-bottom: 72px;
+
+  .subtitle {
+    margin-bottom: 16px;
+  }
+
+  &__image {
+    padding: 0 29px;
+    margin-top: 32px;
+  }
+
+  &__button {
+    margin: 48px auto;
+  }
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+
+  &__social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-networks-item {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+  }
+
+  &__promo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__rating-by-age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    font-family: "Tele2 TextSans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+  }
+}
+
+
+.change-region, .choose-city {
+  display: none;
+}
+
+
+
+

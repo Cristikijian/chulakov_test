@@ -14,7 +14,6 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-
   },
   devServer: {
     watchFiles: path.resolve(__dirname, 'src'),
@@ -28,9 +27,7 @@ module.exports = {
       {
         test: /\.(scss|sass|css)$/,
         use: [
-          env !== 'production'
-            ? 'style-loader'
-            : MiniCssExtractPlugin.loader,
+          env !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
           'resolve-url-loader',
@@ -48,7 +45,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
-    new HtmlWebpackInlineSVGPlugin(),
+    new HtmlWebpackInlineSVGPlugin({ runPreEmit: true }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),

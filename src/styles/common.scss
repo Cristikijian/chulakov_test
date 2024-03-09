@@ -26,10 +26,11 @@ main {
 .title {
   margin-top: 40px;
   margin-bottom: 16px;
-  font-family: "Standard CT Stencil", sans-serif;
+  font-family: "Russo One Regular", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  letter-spacing: 2px;
 
   span {
     color: $color-light-blue;
@@ -37,7 +38,7 @@ main {
 }
 
 .subtitle {
-  font-family: "Tele2 DisplaySerif";
+  font-family: "Roboto Slab";
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;

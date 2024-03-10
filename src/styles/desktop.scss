@@ -77,6 +77,7 @@
 
     &__item {
       margin-right: 56px;
+      margin-bottom: 0;
 
       &:last-child {
         margin-right: 0;
@@ -91,18 +92,22 @@
 
   .get-promocode {
     display: flex;
-    flex-direction: column;
-    padding: 0 162px 200px;
+    flex-flow: row wrap;
+    padding: 0 162px;
     margin-top: 148px;
+    margin-bottom: 130px;
 
-    &__info-block {
-      display: flex;
-      flex-direction: row;
+    &__button {
+      padding: 15px;
+      text-align: center;
+      margin: 0;
+      width: 218px;
     }
 
     &__steps {
       display: flex;
       flex-direction: column;
+      width: 60%;
     }
 
     &__step {
@@ -115,6 +120,7 @@
 
     &__desktop-subtitle {
       display: block;
+      width: 35%;
     }
 
     &__mobile-subtitle {
@@ -133,6 +139,54 @@
     &__step-info {
       width: 70%;
       margin: 0;
+    }
+
+    &__form {
+      width: 35%;
+      margin-right: auto;
+      margin-top: -170px;
+    }
+
+    &__success-submitting {
+      margin-top: 48px;
+    }
+  }
+
+  .registr-a-tariff {
+    padding: 0 162px 288px;
+    flex-direction: row;
+    position: relative;
+    justify-content: initial;
+    align-items: center;
+
+    .subtitle {
+      margin-bottom: 30px;
+    }
+
+    &__info {
+      width: 50%;
+      margin-right: 45px;
+    }
+
+    &__image {
+      margin-top: 0;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__desktop-info {
+      display: block;
+    }
+
+    &__mobile-info {
+      display: none;
+    }
+
+    &__desktop-button {
+      display: block;
+      margin-top: 48px;
     }
   }
 }

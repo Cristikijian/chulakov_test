@@ -158,7 +158,7 @@
   }
 
   .registr-a-tariff {
-    padding: 0 162px 148px;
+    padding: 0 162px 143px;
     flex-direction: row;
     position: relative;
     justify-content: initial;
@@ -196,15 +196,17 @@
   }
 
   .subscribe {
-    padding: 42px 162px 12px;
+    padding: 0 162px 12px;
 
     &__social-networks-item {
-      margin-right: 15px;
+      margin-right: 20px;
     }
   }
 
   .footer {
-    padding: 42px 162px 47px;
+    max-width: 1116px;
+    margin: 0 auto;
+    padding: 42px 0 47px;
     align-items: center;
 
     &__chulakov {

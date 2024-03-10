@@ -58,3 +58,12 @@ main {
   text-align: center;
   border: none;
 }
+
+.button:active {
+  background-color: #696868;
+}
+
+.button:hover {
+  background-color: #dad8d8;
+  cursor: pointer;
+}

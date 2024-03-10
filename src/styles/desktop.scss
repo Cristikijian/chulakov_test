@@ -9,6 +9,12 @@
     line-height: 68px;
   }
 
+  .subtitle {
+    font-size: 39px;
+    line-height: 52px;
+
+  }
+
   .secondary-text {
     font-size: 20px;
     line-height: 30px;
@@ -18,11 +24,115 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 56px 162px;
+    padding: 0 162px;
+    margin-top: 56px;
+
+    button {
+      margin-top: 56px;
+      padding: 19px 44px;
+    }
+
+    .title {
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
+
+    .main-text {
+      span{
+        display: block;
+      }
+    }
+
+   
+    
 
     &__text {
-      margin-top: 83px;
-      margin-right: 55px;
+      width: 40%;
+      padding: 24px 16px 0 0;
+    }
+
+    &__image {
+      margin: 0;
+    }
+  }
+
+  .gifts {
+    padding: 0 166px;
+    margin-top: 148px;
+
+    .subtitle {
+      margin-bottom: 24px;
+    }
+
+    .main-text {
+      span{
+        display: block;
+      }
+    }
+
+    &__items {
+      margin-top: 56px;
+      flex-direction: row;
+    }
+
+    &__item {
+      margin-right: 56px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__image {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  .get-promocode {
+    display: flex;
+    flex-direction: column;
+    padding: 0 162px 200px;
+    margin-top: 148px;
+
+    &__info-block {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__steps {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__step {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: right;
+      margin-bottom: 32px;
+    }
+
+    &__desktop-subtitle {
+      display: block;
+    }
+
+    &__mobile-subtitle {
+      display: none;
+    }
+
+    &__step-number {
+      width: 80px;
+      height: 80px;
+      margin: 0 24px 0 0;
+      font-size: 40px;
+      line-height: 52px;
+      text-align: center;
+    }
+
+    &__step-info {
+      width: 70%;
+      margin: 0;
     }
   }
 }

@@ -1,5 +1,14 @@
 @import "variables";
 
+header {
+  height: 76px;
+  padding: 20px 30px 21px 32px;
+
+  .logo {
+    width: 88px;
+  }
+}
+
 .benefit {
   button {
     margin-top: 40px;
@@ -69,6 +78,14 @@
     margin-bottom: 40px;
   }
 
+  &__desktop-subtitle {
+    display: none;
+  }
+
+  &__mobile-subtitle {
+    display: block;
+  }
+
   &__step {
     display: flex;
     flex-direction: column;
@@ -82,7 +99,7 @@
     height: 56px;
     border-radius: 50%;
     border: 2px solid #39404C;
-    font-family: "Tele2 DisplaySerif";
+    font-family:  "Roboto Slab";;
     font-size: 24px;
     font-weight: 700;
     line-height: 34px;

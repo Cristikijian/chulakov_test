@@ -4,6 +4,15 @@
     margin: 0 auto;
   }
 
+  header {
+    height: 76px;
+    padding: 20px 30px 21px 32px;
+  
+    .logo {
+      width: 88px;
+    }
+  }
+
   .main-text {
     font-size: 20px;
     line-height: 30px;
@@ -190,8 +199,9 @@
     }
 
     &__desktop-button {
-      display: block;
+      display: inline-block;
       margin-top: 48px;
+      text-decoration: none;
     }
   }
 
@@ -234,5 +244,18 @@
         height: 100%;
       }
     }
+  }
+
+  .choose-city {
+    padding: 144px 162px;
+
+    &__cities {
+      grid-template-columns: 155px 155px 155px;
+      gap: 24px 88px;
+    }
+  }
+
+  .change-region.show{
+    right: 80px;
   }
 }

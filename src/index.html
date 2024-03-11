@@ -139,10 +139,13 @@
             >Номер телефона</label
           >
           <input type="text" placeholder="+7 (988) 543-32-34" />
-          <label class="get-promocode__form-checkbox" for="checkbox">
-            <input type="checkbox" name="agreement" value="agree" id="checkbox" />Даю согласие
-            на обработку персональных данных. <a>Условия соглашения</a>.
-          </label>
+          <div class="get-promocode__form-checkbox-container">
+            <input class="get-promocode__form-checkbox" type="checkbox" name="agreement" value="agree" id="checkbox" />
+            <label  for="checkbox">
+              <p>Даю согласие
+                на обработку персональных данных. <a>Условия соглашения</a>.</p>
+            </label>
+          </div>   
           <input
             class="button get-promocode__button"
             type="submit"
@@ -166,7 +169,7 @@
               Перейдите в магазин, оформите тариф «Мой онлайн+»
               и на страничке активации введите ваш промокод. Готово! 
             </p>
-            <button class="button registr-a-tariff__desktop-button">Оформить тариф</button>
+            <a class="button registr-a-tariff__desktop-button" href="https://rostov.tele2.ru" target="_blank">Оформить тариф</a>
           </div>
         </div>
         
@@ -203,26 +206,30 @@
         </div>
       </footer>
     </main>
+    <div class="overlay"></div>
     <div class="change-region">
-      <p>Ваш регион Санкт-Петербург?</p>
-      <div>
-        <button>Да, верно</button>
-        <button>Изменить регион</button>
+      <div class="triangle"></div>
+      <p>Ваш регион <span class="change-region__city">Санкт-Петербург</span>?</p>
+      <div class="change-region__button-container">
+        <button class="change-region__button approve active">Да, верно</button>
+        <button class="change-region__button change">Изменить регион</p>
       </div>
     </div>
     <div class="choose-city">
-      <h2>Выберите город</h2>
-      <a>Воронеж</a>
-      <a>Иркутск</a>
-      <a>Кемерово</a>
-      <a>Красноярск</a>
-      <a>Москва</a>
-      <a>Н. Новгород</a>
-      <a>Новосибирск</a>
-      <a>Пермь</a>
-      <a>Санкт Петербург</a>
-      <a>Челябинск</a>
-      <a>Ростов-на-Дону</a>
+      <h2 class="subtitle ">Выберите город</h2>
+      <div class="choose-city__cities">
+        <a class="main-text">Воронеж</a>
+        <a class="main-text">Новосибирск</a>
+        <a class="main-text">Иркутск</a>
+        <a class="main-text">Пермь</a>
+        <a class="main-text">Кемерово</a>
+        <a class="main-text">Санкт Петербург</a>
+        <a class="main-text">Красноярск</a>
+        <a class="main-text">Челябинск</a>
+        <a class="main-text">Москва</a>
+        <a class="main-text">Ростов-на-Дону</a>
+        <a class="main-text">Н. Новгород</a>
+      </div>
     </div>
 
   </body>

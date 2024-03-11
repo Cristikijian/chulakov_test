@@ -1,13 +1,6 @@
 @import "variables";
 
-header {
-  height: 76px;
-  padding: 20px 30px 21px 32px;
 
-  .logo {
-    width: 88px;
-  }
-}
 
 .benefit {
   button {
@@ -126,12 +119,44 @@ header {
     line-height: 18px;
   }
 
-  &__form-checkbox {
+  &__form-checkbox-container {
+    display: flex;
+    align-items: baseline;
     margin-top: 24px;
     margin-bottom: 32px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+
+  }
+
+  &__form-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__form-checkbox+label {
+    display: inline-flex;
+    user-select: none;
+  }
+
+  &__form-checkbox+label::before {
+    display: inline-block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #FFF;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #1F2229;
+    background-size: 50% 50%;
+  }
+
+  &__form-checkbox:checked+label::before {
+    border-color: #FFF;
+    background-color: #1F2229;
+    background-image: url("../../public/images/checked.svg");
   }
 
   &__button {
@@ -157,26 +182,9 @@ header {
   }
 
 
-  &__form-checkbox::before {
-    display: inline-block;
-    content: '';
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 2px solid #FFF;
-    margin-right: 0.5em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #1F2229;
-    background-size: 50% 50%;
-  }
-
-  &__form-checkbox input:checked+&__form-checkbox::before {
-    background-image: url("../../public/images/checked.svg");
-  }
-
 }
+
+
 
 
 input[type="text"] {
@@ -189,11 +197,7 @@ input[type="text"]::placeholder {
     color: #FFF;
 }
 
-input[type="checkbox"] {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
+
 
 .registr-a-tariff {
   display: flex;
@@ -279,10 +283,6 @@ input[type="checkbox"] {
   }
 }
 
-
-.change-region, .choose-city {
-  display: none;
-}
 
 
 

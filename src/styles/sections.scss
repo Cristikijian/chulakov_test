@@ -184,20 +184,15 @@
 
 }
 
-
-
-
-input[type="text"] {
+input#tel {
   border: 0;
   border-bottom: 1px solid #8F9399;
   background-color: #1F2229;
 }
 
-input[type="text"]::placeholder {
+input#tel::placeholder {
     color: #FFF;
 }
-
-
 
 .registr-a-tariff {
   display: flex;

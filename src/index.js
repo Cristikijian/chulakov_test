@@ -3,34 +3,62 @@ import './styles/main.scss';
 document.addEventListener('DOMContentLoaded', () => {
   const elements = {
     location: document.querySelector('.location__city'),
-    change_region_modal: document.querySelector('.change-region'),
-    change_region_wrapper: document.querySelector('.overlay'),
-    region_approve_button: document.querySelector('.change-region__button.approve'),
-    change_region_button: document.querySelector('.change-region__button.change'),
-    choose_city: document.querySelector('.choose-city'),
+    changRegionModal: document.querySelector('.change-region'),
+    changeRegionWrapper: document.querySelector('.overlay'),
+    regionApproveButton: document.querySelector('.change-region__button.approve'),
+    changeRegionButton: document.querySelector('.change-region__button.change'),
+    chooseCity: document.querySelector('.choose-city'),
     cities: document.querySelector('.choose-city__cities'),
+    phoneNumber: document.getElementById('tel').value,
+    checkBox: document.getElementById('checkbox'),
+    submitButton: document.querySelector('.get-promocode__button'),
+
   };
 
   elements.location.addEventListener('click', () => {
-    elements.change_region_modal.classList.add('show');
-    elements.change_region_wrapper.classList.add('active');
+    elements.changRegionModal.classList.add('show');
+    elements.changeRegionWrapper.classList.add('active');
   });
 
-  elements.change_region_button.addEventListener('click', () => {
-    elements.change_region_button.classList.remove('active');
-    elements.change_region_modal.classList.remove('show');
-    elements.choose_city.classList.add('show');
+  elements.changeRegionButton.addEventListener('click', () => {
+    elements.changeRegionButton.classList.remove('active');
+    elements.cchangRegionModal.classList.remove('show');
+    elements.chooseCity.classList.add('show');
   });
 
-  elements.region_approve_button.addEventListener('click', () => {
-    elements.change_region_modal.classList.remove('show');
-    elements.change_region_wrapper.classList.remove('active');
+  elements.regionApproveButton.addEventListener('click', () => {
+    elements.changRegionModal.classList.remove('show');
+    elements.changeRegionWrapper.classList.remove('active');
   });
 
   elements.cities.addEventListener('click', (e) => {
     elements.location.textContent = e.target.innerHTML;
-    elements.change_region_modal.querySelector('.change-region__city').textContent = e.target.innerHTML;
-    elements.choose_city.classList.remove('show');
-    elements.change_region_wrapper.classList.remove('active');
+    elements.changRegionModal.querySelector('.change-region__city').textContent = e.target.innerHTML;
+    elements.chooseCity.classList.remove('show');
+    elements.changeRegionWrapper.classList.remove('active');
+  });
+
+  function validatePhoneNumber() {
+    const checkBox = document.getElementById('checkbox');
+
+    if (checkBox.checked) {
+      // Проверяем, что введен номер телефона
+      if (!/^8\(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(elements.phoneNumber)) {
+        alert('Пожалуйста, введите номер телефона в формате 8(950)567-67-78');
+        return false;
+      }
+    } else {
+      // Если чекбокс не отмечен, номер телефона не обязателен
+      return true;
+    }
+  }
+
+  elements.submitButton.addEventListener('click', () => {
+    try {
+      validatePhoneNumber();
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(e);
+    }
   });
 });

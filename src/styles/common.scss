@@ -48,6 +48,10 @@ main {
   }
 }
 
+input:focus {
+  outline: none;
+}
+
 .button {
   padding: 11px 40px;
   background-color: #FFF;

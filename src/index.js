@@ -38,18 +38,23 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.changeRegionWrapper.classList.remove('active');
   });
 
+  let errorType = '';
+  const submitMessage = '';
+
   function validatePhoneNumber() {
     const checkBox = document.getElementById('checkbox');
 
     if (checkBox.checked) {
-      // Проверяем, что введен номер телефона
       if (!/^8\(\d{3}\) \d{3}-\d{2}-\d{2}$/.test(elements.phoneNumber)) {
         alert('Пожалуйста, введите номер телефона в формате 8(950)567-67-78');
+        errorType = 'wrongPhoneFormat';
         return false;
       }
     } else {
-      // Если чекбокс не отмечен, номер телефона не обязателен
       return true;
+    }
+    if (!checkBox.checked) {
+      errorType = 'mustBeAgree';
     }
   }
 
@@ -61,4 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error(e);
     }
   });
+
+  switch (errorType) {
+    case 'mustBeAgree':
+
+      break;
+
+    case 'wrongPhoneFormat':
+
+      break;
+
+    case 'phoneNumberDidUse':
+  }
 });
